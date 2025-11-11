@@ -1,0 +1,49 @@
+# - group:
+#   name: Principal Investigator
+#   people:
+#     - name: Tuan Dang
+#       url: /tuandang/
+#       image: assets/images/tuandang.png
+#       department: Electrical Engineering &amp; Computer Engineering
+#       title: Assistant Professor
+#       buildingRoom: JBHT 527
+#       phone: 479-575-6529
+#       email: tuandang@uark.edu
+  
+# - group:
+#   name: Ph.D Students
+#   people:
+  
+
+# - group:
+#   name: Master Students
+#   people:
+
+# - group:
+#   name: Undergrad Students
+#   people:
+
+# - group:
+#   name: Alumni
+#   people:
+
+# - group:
+#   name: Student Research Advisors
+#   people:
+#     - name: Dr. Toan Nguyen
+#       url: https://www.symbotic.com/
+#       image: assets/images/toannguyen.png
+#       department: Symbotic Robotic Company
+#       title: Robotics Researcher
+#       buildingRoom: 
+#       phone: 
+#       email: ngcanhtoan.vp05@gmail.com 
+
+#     - name: Dr. Vinh Dinh
+#       url: https://aivietnam.edu.vn/
+#       image: assets/images/vinhdinh.png
+#       department:  AI Vietnam
+#       title: Founder, AI Researcher
+#       buildingRoom: 
+#       phone: 
+#       email: admin@aivietnam.edu.vn

@@ -1,0 +1,10 @@
+- name: Home
+  url: /
+- name: Team
+  url: ./team.html
+- name: Publications
+  url: ./publications.html
+- name: Join Us
+  url: ./joinus.html
+- name: Contact
+  url: ./contact.html
