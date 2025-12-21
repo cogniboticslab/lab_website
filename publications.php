@@ -7,7 +7,6 @@ $publications = Yaml::parseFile(__DIR__ . '/data/publications.yml');
 
 <html >
   <title></title>
-  <!-- <meta name="description" content="{{ page.description | default: 'Cognitive Robotics Lab' }}"> -->
 
   <?php require ROOT_PATH . '/includes/head.php'; ?>
   <body>

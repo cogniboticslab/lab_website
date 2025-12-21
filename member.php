@@ -34,7 +34,7 @@ use Symfony\Component\Yaml\Yaml;
    <section >
         <div class="container">
              <?php  if ($user_exist == FALSE): ?>
-                <p style="text-align: center;">Error: No data for member <strong> <?= $id ?> </strong></p>
+                <p style="text-align: center;">Updating data for <strong> <?= $id ?> </strong> ...</p>
              <?php  endif; ?>
 
             <?php  if ($user_exist == TRUE): ?>
@@ -58,14 +58,18 @@ use Symfony\Component\Yaml\Yaml;
                         <h4>Educations</h4>
                         <hr>
                         <ul>
+                            <?php if (!empty($member['educations'])): ?>
                             <?php foreach ($member['educations'] as $edu): ?>
                                 <li> <?= $edu['degree'] ?>, <?= $edu['institution'] ?>, <?= $edu['field'] ?>, <?= $edu['year'] ?> </li>
                             <?php endforeach; ?>
+                            <?php endif; ?>
                         </ul>
                         
                          <h4>Publications</h4> 
                         <hr>
+                        <?php if (!empty($member['publications'])): ?>
                         See <a href="<?=$member['publications'] ?>">Google Scholar </a> 
+                        <?php endif; ?>
                         <br>
                         <br>
 
@@ -83,16 +87,20 @@ use Symfony\Component\Yaml\Yaml;
                         <hr>
                         <h5>Conference Review</h5>
                         <ul>
+                            <?php if (!empty($member['services']['conferences'])): ?>
                             <?php foreach ($member['services']['conferences'] as $conference): ?>
                                 <li> <?= $conference ?> </li>
                             <?php endforeach; ?>
+                            <?php endif; ?>
                         </ul>
 
                         <h5>Journal Review</h5>
                         <ul>
+                            <?php if (!empty($member['services']['journals'])): ?>
                              <?php foreach ($member['services']['journals'] as $journal): ?>
                                 <li> <?= $journal ?> </li>
                             <?php endforeach; ?>
+                            <?php endif; ?>
                         </ul> 
 
                     </div>

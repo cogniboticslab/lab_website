@@ -37,6 +37,27 @@
       phone: 
       email: omyoung@uark.edu
 
+- group:
+  name: Research Intern
+  people:
+    - name: Quang-Anh N.D.
+      id: anhnguyen
+      image: anhnguyen.png
+      title: UnderGrad Student
+      email: anhnd@vnuis.edu.vn
+
+    - name: Duc Pham
+      id: ducpham
+      image: ducpham.png
+      title: Graduate Student
+      email: phamminhduc_t65@hus.edu.vn
+      
+    - name: Tung Doan
+      id: tungdoan
+      image: tungdoan.png
+      title: Graduate Student
+      email: phamminhduc_t65@hus.edu.vn
+
 
 # - group:
 #   name: Alumni

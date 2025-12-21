@@ -1,0 +1,44 @@
+- group:
+  name: Rosie Baxter-customized robot
+  projects:
+  - project:
+    name: Perception and Manipulation
+    image: rosie_perception.jpg
+
+  - project:
+    name: SLAM in Dynamic Environments
+    image: rosie_slam.jpg
+
+  - project:
+    name: Human-like Topological Map
+    image: rosie_map.jpg
+
+- group:
+  name: Robot Teaching Hardware/Software
+  projects:
+  - project:
+    name: Teaching Pendant 7 inches (ARM-based, Linux)
+    image: tp7hw2.jpg
+
+  - project:
+    name: Teaching Pendant 5 inches (STM32, bare-metal
+    image: tp3.jpg
+
+  - project:
+    name: Oscilloscope
+    image: sim_osc.jpg
+
+- group:
+  name: Embeded Systems
+  projects:
+  - project:
+    name: IoTree System
+    image: iotree_01.jpg
+
+  - project:
+    name: IoTree Prototype
+    image: iotree_02.jpg
+
+  - project:
+    name: IoTree in Real World
+    image: iotree_realworld.jpg
