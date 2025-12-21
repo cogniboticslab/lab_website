@@ -9,6 +9,8 @@
     - Version: Jekyll 4.4.1
 
 - To **PHP** (version 8.1, tested Namecheap server)
+    - Prevent **recompiling** $\rightarrow$ **copying** new files to host everytime we add new data
+    - Focus on adding/modifying data (folder **data**) without touching code and compiling and copying d
 
 ## Development
 
@@ -18,8 +20,8 @@ git clone https://github.com/cogniboticslab/lab_website.git
 ```
 
 ## Design
-- Please make changes as your own design at **includes/default.html**
-- Specific page located at **_inlcude/*.html** and **markdown files**: *.markdown
+- Please make changes as your own design in **includes**
+- Specific page located at **inlcudes/*.php**
 
 ## Database (static YAML): 
 - folder **members**: this folder contains individual information (for page member.php)
