@@ -1,0 +1,76 @@
+- group:
+  name: Principal Investigator
+  people:
+    - name: Tuan Dang
+      id: tuandang
+      url: /tuandang/
+      image: tuandang2.png
+      department: Electrical Engineering & Computer Science
+      title: Assistant Professor
+      buildingRoom: JBHT-446
+      email: tuandang@uark.edu
+  
+
+- group:
+  name: Students
+  people:
+    - name: Jay Krisell
+      id: jaykrisell
+      url: 
+      image: jay.jpg
+      department: Electrical Engineering & Computer Science
+      title: Graduate Student
+      position: Research Assistant
+      # research: Intelligent Robot/Motion Controller
+      buildingRoom: 
+      phone: 
+      email: jckrisel@uark.edu
+
+    - name: Owen Young
+      id: owenyoung
+      url: 
+      image: owen.png
+      department: Electrical Engineering & Computer Science
+      title: Undergraduate Student
+      position: Research Assistant
+      buildingRoom: 
+      phone: 
+      email: omyoung@uark.edu
+
+
+# - group:
+#   name: Alumni
+#   people:
+
+# - group:
+#   name: Student Research Advisors
+#   people:
+#     - name: Dr. Toan Nguyen
+#       id: toannguyen
+#       url: https://www.symbotic.com/
+#       image: toannguyen.png
+#       department: Symbotic Robotic Company
+#       title: Robotics Researcher
+#       buildingRoom: 
+#       phone: 
+#       email: ngcanhtoan.vp05@gmail.com 
+
+#     - name: Dr. Vinh Dinh
+#       id: vinhdinh
+#       url: https://aivietnam.edu.vn/
+#       image: vinhdinh.png
+#       department:  AI Vietnam
+#       title: Founder, AI Researcher
+#       buildingRoom: 
+#       phone: 
+#       email: admin@aivietnam.edu.vn
+
+#     - name: Dr. Vinh Dinh
+#       id: vinhdinh
+#       url: https://aivietnam.edu.vn/
+#       image: vinhdinh.png
+#       department:  AI Vietnam
+#       title: Founder, AI Researcher
+#       buildingRoom: 
+#       phone: 
+#       email: admin@aivietnam.edu.vn
