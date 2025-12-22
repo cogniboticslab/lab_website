@@ -2,8 +2,7 @@
 <?php require __DIR__ . '/config.php'; ?>
 
 <html >
-  <title></title>
-  <!-- <meta name="description" content="{{ page.description | default: 'Cognitive Robotics Lab' }}"> -->
+  <title> Join Us - <?= $config['title']  ?></title>
 
   <?php require ROOT_PATH . '/includes/head.php'; ?>
   <body>

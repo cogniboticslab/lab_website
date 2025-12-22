@@ -2,7 +2,7 @@
 <?php require __DIR__ . '/config.php'; ?>
 
 <html >
-  <title></title>
+  <title> Contact - <?= $config['title']  ?></title>
 
   <?php require ROOT_PATH . '/includes/head.php'; ?>
   <body>
@@ -14,9 +14,10 @@
       <h2>Contact</h2>
       <p>
       <strong>Cognitive Robotics Lab</strong><br/>
+      Room: JBHT-446<br/>
       University of Arkansas<br/>
       Fayetteville, AR 72701<br/>
-      Phone: 479-575-2000
+      <!-- Phone: 479-575-2000 -->
       </p>
   </section>
 
