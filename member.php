@@ -77,9 +77,11 @@
                         <h4>Awards</h4> 
                         <hr>
                         <ul>
+                            <?php if (!empty($member['awards'])): ?>
                             <?php foreach ($member['awards'] as $award): ?>
                                 <li> <?= $award ?> </li>
                             <?php endforeach; ?>
+                            <?php endif; ?>
                         </ul>
                         
                        

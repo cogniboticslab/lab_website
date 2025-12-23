@@ -43,7 +43,7 @@
     - name: Quang-Anh N.D.
       id: anhnguyen
       image: anhnguyen.png
-      title: UnderGrad Student
+      title: Undergraduate Student
       email: anhnd@vnuis.edu.vn
 
     - name: Duc Pham
@@ -57,41 +57,3 @@
       image: tungdoan.png
       title: Graduate Student
       email: phamminhduc_t65@hus.edu.vn
-
-
-# - group:
-#   name: Alumni
-#   people:
-
-# - group:
-#   name: Student Research Advisors
-#   people:
-#     - name: Dr. Toan Nguyen
-#       id: toannguyen
-#       url: https://www.symbotic.com/
-#       image: toannguyen.png
-#       department: Symbotic Robotic Company
-#       title: Robotics Researcher
-#       buildingRoom: 
-#       phone: 
-#       email: ngcanhtoan.vp05@gmail.com 
-
-#     - name: Dr. Vinh Dinh
-#       id: vinhdinh
-#       url: https://aivietnam.edu.vn/
-#       image: vinhdinh.png
-#       department:  AI Vietnam
-#       title: Founder, AI Researcher
-#       buildingRoom: 
-#       phone: 
-#       email: admin@aivietnam.edu.vn
-
-#     - name: Dr. Vinh Dinh
-#       id: vinhdinh
-#       url: https://aivietnam.edu.vn/
-#       image: vinhdinh.png
-#       department:  AI Vietnam
-#       title: Founder, AI Researcher
-#       buildingRoom: 
-#       phone: 
-#       email: admin@aivietnam.edu.vn
