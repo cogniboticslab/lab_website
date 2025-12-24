@@ -27,6 +27,7 @@
                     <div class="row">
                         <?php foreach ($group['people'] as $item): ?>
                             <div class="col-sm-12 col-md-6 col-lg-4" style="margin-bottom: 20pt;">
+                                
                                 <a href="/member.php?id=<?= $item['id'] ?>">
                                     <div>
                                         <?php if (!empty($item['image'])): ?>
@@ -35,6 +36,7 @@
                                     </div>
                                     <div class="name"><?= $item['name'] ?? '' ?></div>
                                 </a>
+                                
 
                                 <?php if (!empty($item['department'])): ?>
                                     <div class="title"><?= $item['department'] ?></div>
@@ -49,6 +51,10 @@
 
                                 <?php if (!empty($item['research'])): ?>
                                     <div class="title"><?= $item['research'] ?></div>
+                                <?php endif; ?>
+
+                                <?php if (!empty($item['next'])): ?>
+                                    <div class="title">Next Step: <?= $item['next'] ?></div>
                                 <?php endif; ?>
 
                                 <?php if (!empty($item['buildingRoom'])): ?>

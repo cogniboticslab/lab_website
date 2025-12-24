@@ -24,12 +24,14 @@ git clone https://github.com/cogniboticslab/lab_website.git
 - Specific page located at **inlcudes/*.php**
 
 ### **Database (static YAML):**
-- **config.yml**: general website information
+- **config.yml**: General website information
 - **news.yml**: News
 - **projects.yml**: Projects
 - **publications.yml**: Publications
 - **team.yml**: All lab members
-- **members**: this folder contains individual information (for page member.php)
+- **members**: this folder contains individual information
+    - Page: member.php?**id=username**, extract id from URL, then point to file: /data/**username.yml**
+    - Please refer to example file: **/data/members/member.yml** for more infomation.
 
 
 ### **Host the website**

@@ -72,8 +72,6 @@
                         <?php endif; ?>
                         <br>
                         <br>
-
-                       
                         <h4>Awards</h4> 
                         <hr>
                         <ul>
@@ -83,7 +81,6 @@
                             <?php endforeach; ?>
                             <?php endif; ?>
                         </ul>
-                        
                        
                         <h4>Academic Services</h4>
                         <hr>
