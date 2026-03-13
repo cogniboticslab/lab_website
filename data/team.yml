@@ -8,9 +8,8 @@
       department: Electrical Engineering & Computer Science
       title: Assistant Professor
       buildingRoom: JBHT-446
-      email: tuandang@uark.edu
+      email: tuand@uark.edu
   
-
 - group:
   name: Students
   people:
@@ -37,9 +36,16 @@
       phone: 
       email: omyoung@uark.edu
 
+    - name: Nguyen Nguyen
+      id: nguyennguyen
+      image: nguyennguyen.png
+      title: Upcoming Graduate Student
+      email: hnguyen1@uark.edu
+
 - group:
   name: Research Intern
   people:
+  
     - name: Quang-Anh N.D.
       id: anhnguyen
       image: anhnguyen.png
@@ -56,4 +62,23 @@
       id: tungdoan
       image: tungdoan.png
       title: Graduate Student
-      email: phamminhduc_t65@hus.edu.vn
+      email: tung.dd224906@sis.hust.edu.vn
+
+
+- group:
+  name: Alumni
+  people:
+    - name: Quan Tran
+      id: quantran
+      image: 
+      title: Undergraduate Student
+      # email: quan.th@vinuni.edu.vn
+      position: Research Assistant Intern
+      next: Fully funded grad @ Vin University
+    - name: Phuc Pham
+      id: phucpham
+      image: 
+      title: Undergraduate Student
+      # email: phpham@uab.edu
+      position: Research Assistant Intern
+      next: PhD @ UAB, USA

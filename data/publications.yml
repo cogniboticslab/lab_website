@@ -1,4 +1,30 @@
-- Authors: Quan, Tran; Tuan, Dang
+- Authors: Anh DQ Nguyen, Duc Pham, Anh M Nguyen, Tung Doan, Tuan Dang
+  Title: "T2-Nav: Algebraic-Topology–Aware Temporal Graph Memory and Loop Detection for Zero-Shot Visual Navigation"
+  Publication:  IEEE International Conference on Robotics & Automation 2026 (ICRA)
+  Volume: 
+  Number: 
+  Pages: 
+  Year: 2026
+  Publisher:
+  Image: ICRA26_t2nav.png 
+  Paper: "/assets/images/publications/ICRA26_t2nav.pdf"
+  Code:  https://github.com/cogniboticslab/t2nav
+  Video: "https://www.youtube.com/watch?v=joRCrhP5KxA"
+
+- Authors: Qiyuan An, Tuan Dang, Fillia Makedon
+  Title: "A Contrastive Few-Shot RGB-D Traversability Segmentation Framework for Indoor Robotic Navigation"
+  Publication:  IEEE International Conference on Robotics & Automation 2026 (ICRA)
+  Volume: 
+  Number: 
+  Pages: 
+  Year: 2026
+  Publisher:
+  Image: ICRA26_1680.png 
+  Paper: "/assets/images/publications/ICRA26_1680.pdf"
+  # Code:  https://github.com/cogniboticslab/triags
+  Video: "/assets/images/publications/ICRA26_1680.mp4"
+
+- Authors: Quan Tran, Tuan Dang
   Title: "TriaGS: Differentiable Triangulation-Guided Geometric Consistency for 3D Gaussian Splatting"
   Publication:  The IEEE/CVF Winter Conference on Applications of Computer Vision 2026 (WACV)
   Volume: 
@@ -10,7 +36,7 @@
   Paper: "/assets/images/publications/triags_2026.pdf"
   Code:  https://github.com/cogniboticslab/triags
 
-- Authors: Dang, Tuan; Huber, Manfred
+- Authors: Tuan Dang, Manfred Huber
   Title: "Bio-Inspired Hybrid Map: Spatial Implicit Local Frames and Topological Map for Mobile Cobot Navigation"
   Publication:  IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
   Volume: 
@@ -23,7 +49,7 @@
   Code:  https://github.com/tuantdang/simn
   Video: https://youtu.be/GKoSBlGPD_s
 
-- Authors: Phuc, Pham; Vuong, Son; Nguyen, Khang; Dang, Tuan
+- Authors: Phuc Pham, Vuong Son, Khang Nguyen, Tuan Dang 
   Title: Distortion-Aware Adversarial Attacks on Bounding Boxes of Object Detectors
   Publication:  20th International Conference on Computer Vision Theory and Applications
   Volume: 
@@ -36,7 +62,7 @@
   Code: https://github.com/anonymous20210106/attack_detector
   Video:
 
-- Authors: Dang, Tuan; Nguyen, Khang; Huber, Manfred
+- Authors: Tuan Dang, Khang Nguyen, Manfred Huber
   Title: "V3D-SLAM: Robust RGB-D SLAM in Dynamic Environments with 3D Semantic Geometry Voting"
   Publication: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
   Volume: 
@@ -49,7 +75,7 @@
   Code: https://github.com/tuantdang/v3d-slam
   Video: https://youtu.be/K4RcKrASpqI
 
-- Authors: Nguyen, Khang; Dang, Tuan; Huber, Manfred
+- Authors: Khang Nguyen, Tuan Dang, Manfred Huber
   Title: Volumetric Mapping with Panoptic Refinement using Kernel Density Estimation for Mobile Robots
   Publication: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
   Volume: 
@@ -62,7 +88,7 @@
   Code: https://github.com/mkhangg/refined_panoptic_mapping
   Video: https://youtu.be/u214kCms27M
 
-- Authors: Nguyen, Khang; Dang, Tuan; Huber, Manfred
+- Authors: Khang Nguyen, Tuan Dang, Manfred Huber
   Title: Real-time 3D semantic scene perception for egocentric robots with binocular vision
   Publication: arXiv preprint arXiv:2402.11872
   Volume: 
@@ -75,7 +101,7 @@
   Code: https://github.com/mkhangg/semantic scene perception
   Video: https://youtu.be/-dho7l_r56U
 
-- Authors: Nguyen, Khang; Dang, Tuan; Huber, Manfred
+- Authors: Khang Nguyen, Tuan Dang, Manfred Huber
   Title: Online 3D deformable object classification for mobile cobot manipulation
   Publication: 56th International Symposium on Robotics (ISR)
   Volume: 
@@ -88,7 +114,7 @@
   Code: https://github.com/mkhangg/deformable cobot
   Video:
 
-- Authors: Dang, Tuan; Nguyen, Khang; Huber, Manfred
+- Authors: Tuan Dang, Khang Nguyen, Manfred Huber
   Title: Multiplanar Self-Calibration for Mobile Cobot 3D Object Manipulation using 2D Detectors and Depth Estimation
   Publication: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
   Volume: 
@@ -101,7 +127,7 @@
   Code: https://github.com/tuantdang/calib_cobot
   Video: https://youtu.be/KrDJ22rvOAo
 
-- Authors: Ramachandramoorthy, Harish; Dang, Tuan; Srinivasa, Ankitha; Nguyen, Kytai Truong; Nguyen, Phuc
+- Authors: Harish Ramachandramoorthy, Tuan Dang, Ankitha Srinivasa, Kytai Nguyen, Phuc Nguyen
   Title: Development of a Smart Portable Hypoxic Chamber with Accurate Sensing, Control and Visualization of In Vitro Cell Culture for Replication of Cancer Microenvironment
   Publication: Cancers
   Volume: 15
@@ -114,7 +140,7 @@
   Code:
   Video:
 
-- Authors: Dang, Tuan; Nguyen, Khang; Huber, Manfred
+- Authors: Tuan Dang, Khang Nguyen, Manfred Huber
   Title: "Perfc: An efficient 2D and 3D perception software-hardware framework for mobile cobot"
   Publication: The International FLAIRS Conference Proceedings
   Volume: 36
@@ -127,7 +153,7 @@
   Code:  https://github.com/tuantdang/perception_framework
   Video: https://youtu.be/q4oz9Rixbzs
 
-- Authors: Dang, Tuan; Tran, Trung; Nguyen, Khang; Pham, Tien; Pham, Nhat; Vu, Tam; Nguyen, Phuc
+- Authors: Tuan Dang, Trung Tran, Khang Nguyen, Tien Pham, Nhat Pham, Tam Vu, Phuc Nguyen
   Title: "IoTree: A battery-free wearable system with biocompatible sensors for continuous tree health monitoring"
   Publication: Proceedings of the 28th Annual International Conference on Mobile Computing And Networking (MobiCom)
   Volume: 
@@ -140,7 +166,7 @@
   Code: https://github.com/tuantdang/iotree
   Video: https://www.youtube.com/watch?v=8DUfOcuPwIk&ab_channel=TuanDang
 
-- Authors: Dang, Tuan Thanh; Kim, Jin Ho; Jeon, Jae Wook
+- Authors: Tuan Dang, Jinho Kim; Jaewook Jeon
   Title: Performance analysis of Mechatrolink-III
   Publication: 2013 11th IEEE International Conference on Industrial Informatics (INDIN)
   Volume: 
@@ -149,7 +175,7 @@
   Year: 2013
   Publisher: IEEE
 
-- Authors: Kim, Jin Ho; Tuan, Dang Thanh; Jeon, Jae Wook; Yeom, Bok Sun
+- Authors: JinHo Kim, Tuan Dang, Jaewook Jeon, BokSun Yeom
   Title: Design of a seamless gateway for Mechatrolink
   Publication: 2013 IEEE International Conference on Industrial Technology (ICIT)
   Volume: 
@@ -158,7 +184,7 @@
   Year: 2013
   Publisher: IEEE
 
-- Authors: Dang, Tuan Thanh; Kim, Jin Ho; Nguyen, Dung Duc; Jeon, Jae Wook
+- Authors: Tuan Dang, Jinho Kim, Dung Nguyen, Jaewook Jeon
   Title: A Gateway for Multi-device Communication between Mechatrolink-III and RS-485
   Publication: 2012 12th International Conference on Control, Automation and Systems
   Volume: 

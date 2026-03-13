@@ -54,7 +54,7 @@
                                 <?php endif; ?>
 
                                 <?php if (!empty($item['next'])): ?>
-                                    <div class="title">Next Step: <?= $item['next'] ?></div>
+                                    <div class="title">Next Stop: <?= $item['next'] ?></div>
                                 <?php endif; ?>
 
                                 <?php if (!empty($item['buildingRoom'])): ?>

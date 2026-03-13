@@ -30,7 +30,7 @@ git clone https://github.com/cogniboticslab/lab_website.git
 - **publications.yml**: Publications
 - **team.yml**: All lab members
 - **members**: this folder contains individual information
-    - Page: member.php?**id=username**, extract id from URL, then point to file: /data/**username.yml**
+    - Page: member.php?**id=username**, extract id from URL, then point to file: /data/members/**username.yml**
     - Please refer to example file: **/data/members/member.yml** for more infomation.
 
 
