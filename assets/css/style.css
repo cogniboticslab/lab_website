@@ -306,15 +306,15 @@ a:active {
 
 /* =======Slide show======== */
 
-.hero-slide {
-    height: 500px;
-    object-fit: cover;
+#heroCarousel {
+    width: 100%;
+    margin-bottom: 30px;
 }
 
-.hero-overlay {
-    background: rgba(0, 0, 0, 0.4);
-    padding: 20px 28px;
-    border-radius: 0px;
+.hero-slide {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
 }
 
 .carousel-caption.hero-overlay {
@@ -323,21 +323,97 @@ a:active {
     bottom: 0%;
     width: 100%;
     max-width: 100%;
-    transform: none;
-
-    background: rgba(0,0,0,0.45);
-    padding: 25px 40px;
-
+    padding: 24px 40px;
+    background: rgba(0, 0, 0, 0.42);
     text-align: center;
 }
 
-.carousel-caption.hero-overlay h2 {
-    font-size: 42px;
-    font-weight: 600;
+.carousel-caption.hero-overlay h2,
+.carousel-caption.hero-overlay h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 12px;
     color: #66b3ff;
 }
 
 .carousel-caption.hero-overlay p {
-    font-size: 20px;
-    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    color: #fff;
+    line-height: 1.5;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .hero-slide {
+        height: 420px;
+    }
+
+    .carousel-caption.hero-overlay {
+        bottom: 18%;
+        padding: 20px 28px;
+    }
+
+    .carousel-caption.hero-overlay h2,
+    .carousel-caption.hero-overlay h3 {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+    }
+
+    .carousel-caption.hero-overlay p {
+        font-size: 1.05rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero-slide {
+        height: 300px;
+    }
+
+    .carousel-caption.hero-overlay {
+        bottom: 0%;
+        padding: 14px 16px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .carousel-caption.hero-overlay h2,
+    .carousel-caption.hero-overlay h3 {
+        font-size: 1.5rem;
+        line-height: 1.2;
+        margin-bottom: 8px;
+    }
+
+    .carousel-caption.hero-overlay p {
+        font-size: 0.92rem;
+        line-height: 1.35;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 10%;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    .hero-slide {
+        height: 220px;
+    }
+
+    .carousel-caption.hero-overlay {
+        bottom: 0%;
+        padding: 10px 12px;
+    }
+
+    .carousel-caption.hero-overlay h2,
+    .carousel-caption.hero-overlay h3 {
+        font-size: 1.15rem;
+        margin-bottom: 6px;
+    }
+
+    .carousel-caption.hero-overlay p {
+        font-size: 0.78rem;
+        line-height: 1.25;
+    }
 }
