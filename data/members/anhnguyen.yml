@@ -1,0 +1,32 @@
+name: Quang-Anh N.D.
+title: Undergraduate Student
+department: Engineering and Technology
+email: anhnd@vnuis.edu.vn
+photo: anhnguyen.png
+linkedin: https://www.linkedin.com/in/fiyud/
+github: https://github.com/fiyud
+schorlar: https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=mEouKaQAAAAJ
+
+about: Quang-Anh N.D. is currently pursuing a Bachelor’s degree in Applied Information Technology at 
+       International School, Vietnam National University, Hanoi. He is currently a researcher at the CVR, CoMI of VNUIS, and Cognitive Robotics Lab - University of Arkansas, 
+       and working as RA in Center for Environmental Intelligence at VinUniveristy. His research interests focus on Computer Vision and Signal Processing, 
+       Biomedical Informatics and AI in Robotics.
+
+educations:
+  - degree: BSc
+    institution: VNU International School, Vietnam
+    year: 2025
+    field: Applied Informations Technology
+
+publications: https://www.researchgate.net/profile/Quang-Anh-Nd
+
+awards: # Array
+  - The First Prize in the Student Scientific Research Competition 2024 - 2025, VNU International School
+  - Third Prize in the Student Scientific Research Competition 2024 - 2025, Vietnam National University
+  - First Prize Ideathon Edtech 2025, Hanoi University of Science and Technology
+
+# Review services 
+services: 
+  conferences: # Array
+  journals: # Array
+    - Journal of Engineering Research and Reports (Ms/JERR/145247, 2025)

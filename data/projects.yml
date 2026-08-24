@@ -21,7 +21,7 @@
     image: tp7hw2.jpg
 
   - project:
-    name: Teaching Pendant 5 inches (STM32, bare-metal
+    name: Teaching Pendant 5 inches (STM32, bare-metal)
     image: tp3.jpg
 
   - project:
@@ -29,7 +29,7 @@
     image: sim_osc.jpg
 
 - group:
-  name: Embeded Systems
+  name: Embedded Systems
   projects:
   - project:
     name: IoTree System

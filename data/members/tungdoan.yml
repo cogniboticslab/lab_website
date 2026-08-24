@@ -1,0 +1,28 @@
+name: Tung Doan
+title: Undergraduate student
+department: Computer Science
+email: tung.dd224906@sis.hust.edu.vn
+photo: tungdoan.png
+linkedin: https://www.linkedin.com/in/duytungihb/
+github: https://github.com/ihbkaiser
+schorlar: https://scholar.google.com/citations?user=PTsLOrkAAAAJ&hl=en
+
+about: I am a Computer Science student at Hanoi University of Science and Technology, specializing in AI, Data Science, and optimization. I have experience in machine learning, deep learning, LLMs, and computer vision, with both research projects and hands-on industry experience.
+
+
+educations:
+  - degree: Bachelor
+    institution: Hanoi University of Science and Technology
+    year: 2026
+    field: Computer Science
+
+publications: https://scholar.google.com/citations?user=PTsLOrkAAAAJ&hl=en
+
+awards: # Array
+  - First Prize, GECCO 2024 Numerical Optimization on GNBG-Generated Test Suite Competition
+  - Second Prize, Numerical Global Optimization Competition (GNBG-II), ACM GECCO 2025
+  - Second Prize, LLM-Designed Evolutionary Algorithms Competition, ACM GECCO 2025
+  - Second Prize, AI4Industry Hackathon 2025, Hanoi University of Industry
+  - Third Prize, Vietnam Mathematical Olympiad (2022)
+  - First Prize, Provincial Mathematical Olympiad (2020, 2021)
+

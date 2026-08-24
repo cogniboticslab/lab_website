@@ -1,0 +1,24 @@
+name: Phuc Pham
+title: PhD Student | Graduate Research Assistant
+department: Department of Computer Science
+institution: The University of Alabama at Birmingham (UAB)
+email: phpham@uab.edu
+photo: phucpham.png
+
+github: https://github.com/PhucPhamBio
+scholar: https://scholar.google.com/citations?user=oNF0I3IAAAAJ&hl=en
+
+about:
+  Phuc Pham is a PhD student in Computer Science at the University of Alabama at Birmingham (UAB). His research is centered on the development of computational algorithms and artificial intelligence approaches for bioinformatics, with a particular emphasis on the analysis and integration of multi-omics data in translational and clinical research.
+
+educations:
+  - degree: Doctor of Philosophy (PhD)
+    field: Computer Science
+    institution: The University of Alabama at Birmingham (UAB)
+    year: 2026-present
+  - degree: Bachelor of Engineering (BEng)
+    field: Computer Science
+    institution: Ho Chi Minh City University of Technology (HCMUT)
+    year: 2025
+
+publications: https://scholar.google.com/citations?user=oNF0I3IAAAAJ&hl=en

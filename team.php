@@ -1,93 +1,127 @@
-<!DOCTYPE html>
-<?php 
-    require __DIR__ . '/config.php'; 
-    use Symfony\Component\Yaml\Yaml;
-    $team = Yaml::parseFile(__DIR__ . '/data/team.yml');
+<?php
+    require __DIR__ . '/config.php';
+
+    $page_title       = 'Team - ' . $config['title'];
+    $page_description = 'Faculty, students, and research interns of the '
+                        . $config['title'] . ' at the ' . $config['university'] . '.';
+    $team = load_yaml(__DIR__ . '/data/team.yml');
+
+    /**
+     * Photo shown on the team page: the one listed in team.yml, or, when that
+     * is missing, the one from the member's own profile file.
+     */
+    function team_photo(array $item): string
+    {
+        if (!empty($item['image'])) {
+            return $item['image'];
+        }
+        $id = $item['id'] ?? '';
+        if (preg_match('/^[A-Za-z0-9_-]+$/', $id)) {
+            $member = load_yaml(__DIR__ . '/data/members/' . $id . '.yml');
+            if (!empty($member['photo'])) {
+                return $member['photo'];
+            }
+        }
+        return '';
+    }
+
+    /** First letter, used when someone has no photo at all. */
+    function initial(string $name): string
+    {
+        $name = trim($name);
+        return $name === '' ? '?' : mb_strtoupper(mb_substr($name, 0, 1));
+    }
 ?>
-
-<html >
-  <title>Team - <?= $config['title']  ?></title>
-
+<!DOCTYPE html>
+<html lang="en">
   <?php require ROOT_PATH . '/includes/head.php'; ?>
   <body>
-    <main>
     <?php require ROOT_PATH . '/includes/header.php'; ?>
 
-    <!-- Content -->
-   <section>
-    <?php foreach ($team as $group): ?>
-        <?php if (!empty($group['people']) && count($group['people']) > 0): ?>
+    <main id="main">
+      <div class="pageband">
+        <div class="shell">
+          <h1>Team</h1>
+          <p>The people building and teaching robots to map, navigate, and plan the way people do.</p>
+        </div>
+      </div>
 
-            <div class="row">
-                <h4 style="margin-top: 10px; margin-bottom: 10px;">
-                    <?= $group['name'] ?? '' ?>
-                </h4>
-
-                <div class="row">
-                    <div class="row">
-                        <?php foreach ($group['people'] as $item): ?>
-                            <div class="col-sm-12 col-md-6 col-lg-4" style="margin-bottom: 20pt;">
-                                
-                                <a href="/member.php?id=<?= $item['id'] ?>">
-                                    <div>
-                                        <?php if (!empty($item['image'])): ?>
-                                            <img class="photo" src="/assets/images/members/<?= $item['image'] ?>" alt="<?= $item['name'] ?? '' ?>">
-                                        <?php endif; ?>
-                                    </div>
-                                    <div class="name"><?= $item['name'] ?? '' ?></div>
-                                </a>
-                                
-
-                                <?php if (!empty($item['department'])): ?>
-                                    <div class="title"><?= $item['department'] ?></div>
-                                <?php endif; ?>
-
-                                <?php if (!empty($item['title'])): ?>
-                                    <div class="title"><?= $item['title'] ?></div>
-                                <?php endif; ?>
-                                <?php if (!empty($item['position'])): ?>
-                                    <div class="title"><?= $item['position'] ?></div>
-                                <?php endif; ?>
-
-                                <?php if (!empty($item['research'])): ?>
-                                    <div class="title"><?= $item['research'] ?></div>
-                                <?php endif; ?>
-
-                                <?php if (!empty($item['next'])): ?>
-                                    <div class="title">Next Stop: <?= $item['next'] ?></div>
-                                <?php endif; ?>
-
-                                <?php if (!empty($item['buildingRoom'])): ?>
-                                    <div class="buildingRoom">
-                                        Office: <?= $item['buildingRoom'] ?>
-                                    </div>
-                                <?php endif; ?>
-
-                                <?php if (!empty($item['phone'])): ?>
-                                    <div class="phone">
-                                        Phone: <a href="tel:<?= $item['phone'] ?>"><?= $item['phone'] ?></a>
-                                    </div>
-                                <?php endif; ?>
-
-                                <?php if (!empty($item['email'])): ?>
-                                    <div class="email">
-                                        Email: <a href="mailto:<?= $item['email'] ?>"><?= $item['email'] ?></a>
-                                    </div>
-                                <?php endif; ?>
-                            </div>
-                        <?php endforeach; ?>
-                    </div>
-    
-                </div>
-            </div>
-
+      <section class="section">
+        <div class="shell">
+        <?php if (!$team): ?>
+          <div class="empty">Team information is being updated.</div>
         <?php endif; ?>
-    <?php endforeach; ?>
 
-    </section>
-    <!-- End of  Content -->
-    
-    <?php require ROOT_PATH . '/includes/footer.php'; ?>
+        <?php foreach ($team as $group): ?>
+            <?php if (empty($group['people'])) { continue; } ?>
+
+            <h2 class="group-title"><?= e($group['name'] ?? '') ?></h2>
+
+            <div class="grid grid--people">
+                <?php foreach ($group['people'] as $item): ?>
+                    <?php
+                        $photo = team_photo($item);
+                        $name  = $item['name'] ?? '';
+                        $id    = $item['id'] ?? '';
+                    ?>
+                    <article class="person">
+                        <a class="person__link" href="/member.php?id=<?= urlencode($id) ?>">
+                            <?php if ($photo !== ''): ?>
+                                <div class="person__photo">
+                                    <img src="/assets/images/members/<?= e($photo) ?>"
+                                         alt="<?= e($name) ?>" loading="lazy">
+                                </div>
+                            <?php else: ?>
+                                <div class="person__photo person__photo--placeholder" aria-hidden="true">
+                                    <?= e(initial($name)) ?>
+                                </div>
+                            <?php endif; ?>
+                            <h3 class="person__name"><?= e($name) ?></h3>
+                        </a>
+
+                        <?php if (!empty($item['title'])): ?>
+                            <div class="person__meta person__meta--accent"><?= e($item['title']) ?></div>
+                        <?php endif; ?>
+
+                        <?php if (!empty($item['position'])): ?>
+                            <div class="person__meta"><?= e($item['position']) ?></div>
+                        <?php endif; ?>
+
+                        <?php if (!empty($item['department'])): ?>
+                            <div class="person__meta"><?= e($item['department']) ?></div>
+                        <?php endif; ?>
+
+                        <?php if (!empty($item['research'])): ?>
+                            <div class="person__meta"><?= e($item['research']) ?></div>
+                        <?php endif; ?>
+
+                        <?php if (!empty($item['next'])): ?>
+                            <div class="person__meta"><strong>Next stop:</strong> <?= e($item['next']) ?></div>
+                        <?php endif; ?>
+
+                        <?php if (!empty($item['buildingRoom'])): ?>
+                            <div class="person__meta">Office: <?= e($item['buildingRoom']) ?></div>
+                        <?php endif; ?>
+
+                        <?php if (!empty($item['phone'])): ?>
+                            <div class="person__contact">
+                                <a href="tel:<?= e($item['phone']) ?>"><?= e($item['phone']) ?></a>
+                            </div>
+                        <?php endif; ?>
+
+                        <?php if (!empty($item['email'])): ?>
+                            <div class="person__contact"> Email: 
+                                <a href="mailto:<?= e($item['email']) ?>"><?= e($item['email']) ?></a>
+                            </div>
+                        <?php endif; ?>
+                    </article>
+                <?php endforeach; ?>
+            </div>
+        <?php endforeach; ?>
+        </div>
+      </section>
     </main>
+
+    <?php require ROOT_PATH . '/includes/footer.php'; ?>
   </body>
 </html>

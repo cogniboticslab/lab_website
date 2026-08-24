@@ -1,0 +1,151 @@
+[20-Dec-2025 06:20:40 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.0". You are running 8.1.33. in /home/cognbkdo/public_html/vendor/composer/platform_check.php:22
+Stack trace:
+#0 /home/cognbkdo/public_html/vendor/composer/autoload_real.php(25): require()
+#1 /home/cognbkdo/public_html/vendor/autoload.php(22): ComposerAutoloaderInit1d14b066a73960476c178ecf92bed18f::getLoader()
+#2 /home/cognbkdo/public_html/config.php(5): require('/home/cognbkdo/...')
+#3 /home/cognbkdo/public_html/index.php(2): require('/home/cognbkdo/...')
+#4 {main}
+  thrown in /home/cognbkdo/public_html/vendor/composer/platform_check.php on line 22
+[20-Dec-2025 06:32:49 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.0". You are running 8.1.33. in /home/cognbkdo/public_html/vendor/composer/platform_check.php:22
+Stack trace:
+#0 /home/cognbkdo/public_html/vendor/composer/autoload_real.php(25): require()
+#1 /home/cognbkdo/public_html/vendor/autoload.php(22): ComposerAutoloaderInit1d14b066a73960476c178ecf92bed18f::getLoader()
+#2 /home/cognbkdo/public_html/config.php(5): require('/home/cognbkdo/...')
+#3 /home/cognbkdo/public_html/index.php(2): require('/home/cognbkdo/...')
+#4 {main}
+  thrown in /home/cognbkdo/public_html/vendor/composer/platform_check.php on line 22
+[20-Dec-2025 06:32:50 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.0". You are running 8.1.33. in /home/cognbkdo/public_html/vendor/composer/platform_check.php:22
+Stack trace:
+#0 /home/cognbkdo/public_html/vendor/composer/autoload_real.php(25): require()
+#1 /home/cognbkdo/public_html/vendor/autoload.php(22): ComposerAutoloaderInit1d14b066a73960476c178ecf92bed18f::getLoader()
+#2 /home/cognbkdo/public_html/config.php(5): require('/home/cognbkdo/...')
+#3 /home/cognbkdo/public_html/index.php(2): require('/home/cognbkdo/...')
+#4 {main}
+  thrown in /home/cognbkdo/public_html/vendor/composer/platform_check.php on line 22
+[20-Dec-2025 06:32:50 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.0". You are running 8.1.33. in /home/cognbkdo/public_html/vendor/composer/platform_check.php:22
+Stack trace:
+#0 /home/cognbkdo/public_html/vendor/composer/autoload_real.php(25): require()
+#1 /home/cognbkdo/public_html/vendor/autoload.php(22): ComposerAutoloaderInit1d14b066a73960476c178ecf92bed18f::getLoader()
+#2 /home/cognbkdo/public_html/config.php(5): require('/home/cognbkdo/...')
+#3 /home/cognbkdo/public_html/index.php(2): require('/home/cognbkdo/...')
+#4 {main}
+  thrown in /home/cognbkdo/public_html/vendor/composer/platform_check.php on line 22
+[20-Dec-2025 06:32:51 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.0". You are running 8.1.33. in /home/cognbkdo/public_html/vendor/composer/platform_check.php:22
+Stack trace:
+#0 /home/cognbkdo/public_html/vendor/composer/autoload_real.php(25): require()
+#1 /home/cognbkdo/public_html/vendor/autoload.php(22): ComposerAutoloaderInit1d14b066a73960476c178ecf92bed18f::getLoader()
+#2 /home/cognbkdo/public_html/config.php(5): require('/home/cognbkdo/...')
+#3 /home/cognbkdo/public_html/index.php(2): require('/home/cognbkdo/...')
+#4 {main}
+  thrown in /home/cognbkdo/public_html/vendor/composer/platform_check.php on line 22
+[20-Dec-2025 06:32:51 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.0". You are running 8.1.33. in /home/cognbkdo/public_html/vendor/composer/platform_check.php:22
+Stack trace:
+#0 /home/cognbkdo/public_html/vendor/composer/autoload_real.php(25): require()
+#1 /home/cognbkdo/public_html/vendor/autoload.php(22): ComposerAutoloaderInit1d14b066a73960476c178ecf92bed18f::getLoader()
+#2 /home/cognbkdo/public_html/config.php(5): require('/home/cognbkdo/...')
+#3 /home/cognbkdo/public_html/index.php(2): require('/home/cognbkdo/...')
+#4 {main}
+  thrown in /home/cognbkdo/public_html/vendor/composer/platform_check.php on line 22
+[20-Dec-2025 06:32:57 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.0". You are running 8.1.33. in /home/cognbkdo/public_html/vendor/composer/platform_check.php:22
+Stack trace:
+#0 /home/cognbkdo/public_html/vendor/composer/autoload_real.php(25): require()
+#1 /home/cognbkdo/public_html/vendor/autoload.php(22): ComposerAutoloaderInit1d14b066a73960476c178ecf92bed18f::getLoader()
+#2 /home/cognbkdo/public_html/config.php(5): require('/home/cognbkdo/...')
+#3 /home/cognbkdo/public_html/index.php(2): require('/home/cognbkdo/...')
+#4 {main}
+  thrown in /home/cognbkdo/public_html/vendor/composer/platform_check.php on line 22
+[20-Dec-2025 06:32:58 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.0". You are running 8.1.33. in /home/cognbkdo/public_html/vendor/composer/platform_check.php:22
+Stack trace:
+#0 /home/cognbkdo/public_html/vendor/composer/autoload_real.php(25): require()
+#1 /home/cognbkdo/public_html/vendor/autoload.php(22): ComposerAutoloaderInit1d14b066a73960476c178ecf92bed18f::getLoader()
+#2 /home/cognbkdo/public_html/config.php(5): require('/home/cognbkdo/...')
+#3 /home/cognbkdo/public_html/index.php(2): require('/home/cognbkdo/...')
+#4 {main}
+  thrown in /home/cognbkdo/public_html/vendor/composer/platform_check.php on line 22
+[20-Dec-2025 06:32:59 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.0". You are running 8.1.33. in /home/cognbkdo/public_html/vendor/composer/platform_check.php:22
+Stack trace:
+#0 /home/cognbkdo/public_html/vendor/composer/autoload_real.php(25): require()
+#1 /home/cognbkdo/public_html/vendor/autoload.php(22): ComposerAutoloaderInit1d14b066a73960476c178ecf92bed18f::getLoader()
+#2 /home/cognbkdo/public_html/config.php(5): require('/home/cognbkdo/...')
+#3 /home/cognbkdo/public_html/index.php(2): require('/home/cognbkdo/...')
+#4 {main}
+  thrown in /home/cognbkdo/public_html/vendor/composer/platform_check.php on line 22
+[20-Dec-2025 06:33:00 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.0". You are running 8.1.33. in /home/cognbkdo/public_html/vendor/composer/platform_check.php:22
+Stack trace:
+#0 /home/cognbkdo/public_html/vendor/composer/autoload_real.php(25): require()
+#1 /home/cognbkdo/public_html/vendor/autoload.php(22): ComposerAutoloaderInit1d14b066a73960476c178ecf92bed18f::getLoader()
+#2 /home/cognbkdo/public_html/config.php(5): require('/home/cognbkdo/...')
+#3 /home/cognbkdo/public_html/index.php(2): require('/home/cognbkdo/...')
+#4 {main}
+  thrown in /home/cognbkdo/public_html/vendor/composer/platform_check.php on line 22
+[20-Dec-2025 06:33:00 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.0". You are running 8.1.33. in /home/cognbkdo/public_html/vendor/composer/platform_check.php:22
+Stack trace:
+#0 /home/cognbkdo/public_html/vendor/composer/autoload_real.php(25): require()
+#1 /home/cognbkdo/public_html/vendor/autoload.php(22): ComposerAutoloaderInit1d14b066a73960476c178ecf92bed18f::getLoader()
+#2 /home/cognbkdo/public_html/config.php(5): require('/home/cognbkdo/...')
+#3 /home/cognbkdo/public_html/index.php(2): require('/home/cognbkdo/...')
+#4 {main}
+  thrown in /home/cognbkdo/public_html/vendor/composer/platform_check.php on line 22
+[20-Dec-2025 06:33:00 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.0". You are running 8.1.33. in /home/cognbkdo/public_html/vendor/composer/platform_check.php:22
+Stack trace:
+#0 /home/cognbkdo/public_html/vendor/composer/autoload_real.php(25): require()
+#1 /home/cognbkdo/public_html/vendor/autoload.php(22): ComposerAutoloaderInit1d14b066a73960476c178ecf92bed18f::getLoader()
+#2 /home/cognbkdo/public_html/config.php(5): require('/home/cognbkdo/...')
+#3 /home/cognbkdo/public_html/index.php(2): require('/home/cognbkdo/...')
+#4 {main}
+  thrown in /home/cognbkdo/public_html/vendor/composer/platform_check.php on line 22
+[20-Dec-2025 06:33:01 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.0". You are running 8.1.33. in /home/cognbkdo/public_html/vendor/composer/platform_check.php:22
+Stack trace:
+#0 /home/cognbkdo/public_html/vendor/composer/autoload_real.php(25): require()
+#1 /home/cognbkdo/public_html/vendor/autoload.php(22): ComposerAutoloaderInit1d14b066a73960476c178ecf92bed18f::getLoader()
+#2 /home/cognbkdo/public_html/config.php(5): require('/home/cognbkdo/...')
+#3 /home/cognbkdo/public_html/index.php(2): require('/home/cognbkdo/...')
+#4 {main}
+  thrown in /home/cognbkdo/public_html/vendor/composer/platform_check.php on line 22
+[04-Feb-2026 16:23:03 UTC] PHP Fatal error:  Uncaught Symfony\Component\Yaml\Exception\ParseException: Unexpected characters near "https://2026.ieee-icra.org/"> (ICRA 2026)</a>. Congratutions our teams!" " at line 5 (near "event: "We have 2 papers accepted at the 2026 IEEE International Conference on Robotics <a href="https://2026.ieee-icra.org/"> (ICRA 2026)</a>. Congratutions our teams!" "). in /home/cognbkdo/public_html/vendor/symfony/yaml/Parser.php:757
+Stack trace:
+#0 /home/cognbkdo/public_html/vendor/symfony/yaml/Parser.php(341): Symfony\Component\Yaml\Parser->parseValue()
+#1 /home/cognbkdo/public_html/vendor/symfony/yaml/Parser.php(524): Symfony\Component\Yaml\Parser->doParse()
+#2 /home/cognbkdo/public_html/vendor/symfony/yaml/Parser.php(190): Symfony\Component\Yaml\Parser->parseBlock()
+#3 /home/cognbkdo/public_html/vendor/symfony/yaml/Parser.php(86): Symfony\Component\Yaml\Parser->doParse()
+#4 /home/cognbkdo/public_html/vendor/symfony/yaml/Parser.php(63): Symfony\Component\Yaml\Parser->parse()
+#5 /home/cognbkdo/public_html/vendor/symfony/yaml/Yaml.php(56): Symfony\Component\Yaml\Parser->parseFile()
+#6 /home/cognbkdo/public_html/index.php(23): Symfony\Component\Yaml\Yaml::parseFile()
+#7 {main}
+  thrown in /home/cognbkdo/public_html/vendor/symfony/yaml/Parser.php on line 757
+[04-Feb-2026 16:23:05 UTC] PHP Fatal error:  Uncaught Symfony\Component\Yaml\Exception\ParseException: Unexpected characters near "https://2026.ieee-icra.org/"> (ICRA 2026)</a>. Congratutions our teams!" " at line 5 (near "event: "We have 2 papers accepted at the 2026 IEEE International Conference on Robotics <a href="https://2026.ieee-icra.org/"> (ICRA 2026)</a>. Congratutions our teams!" "). in /home/cognbkdo/public_html/vendor/symfony/yaml/Parser.php:757
+Stack trace:
+#0 /home/cognbkdo/public_html/vendor/symfony/yaml/Parser.php(341): Symfony\Component\Yaml\Parser->parseValue()
+#1 /home/cognbkdo/public_html/vendor/symfony/yaml/Parser.php(524): Symfony\Component\Yaml\Parser->doParse()
+#2 /home/cognbkdo/public_html/vendor/symfony/yaml/Parser.php(190): Symfony\Component\Yaml\Parser->parseBlock()
+#3 /home/cognbkdo/public_html/vendor/symfony/yaml/Parser.php(86): Symfony\Component\Yaml\Parser->doParse()
+#4 /home/cognbkdo/public_html/vendor/symfony/yaml/Parser.php(63): Symfony\Component\Yaml\Parser->parse()
+#5 /home/cognbkdo/public_html/vendor/symfony/yaml/Yaml.php(56): Symfony\Component\Yaml\Parser->parseFile()
+#6 /home/cognbkdo/public_html/index.php(23): Symfony\Component\Yaml\Yaml::parseFile()
+#7 {main}
+  thrown in /home/cognbkdo/public_html/vendor/symfony/yaml/Parser.php on line 757
+[09-Mar-2026 05:38:31 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/cognbkdo/public_html/publications.php on line 18
+[13-Mar-2026 16:29:07 UTC] PHP Fatal error:  Uncaught Symfony\Component\Yaml\Exception\ParseException: File "/home/cognbkdo/public_html/data/banner.yml" does not exist. in /home/cognbkdo/public_html/vendor/symfony/yaml/Parser.php:53
+Stack trace:
+#0 /home/cognbkdo/public_html/vendor/symfony/yaml/Yaml.php(56): Symfony\Component\Yaml\Parser->parseFile()
+#1 /home/cognbkdo/public_html/index.php(22): Symfony\Component\Yaml\Yaml::parseFile()
+#2 {main}
+  thrown in /home/cognbkdo/public_html/vendor/symfony/yaml/Parser.php on line 53
+[13-Mar-2026 16:29:15 UTC] PHP Fatal error:  Uncaught Symfony\Component\Yaml\Exception\ParseException: File "/home/cognbkdo/public_html/data/banner.yml" does not exist. in /home/cognbkdo/public_html/vendor/symfony/yaml/Parser.php:53
+Stack trace:
+#0 /home/cognbkdo/public_html/vendor/symfony/yaml/Yaml.php(56): Symfony\Component\Yaml\Parser->parseFile()
+#1 /home/cognbkdo/public_html/index.php(22): Symfony\Component\Yaml\Yaml::parseFile()
+#2 {main}
+  thrown in /home/cognbkdo/public_html/vendor/symfony/yaml/Parser.php on line 53
+[13-Mar-2026 16:30:46 UTC] PHP Fatal error:  Uncaught Symfony\Component\Yaml\Exception\ParseException: File "/home/cognbkdo/public_html/data/banner.yml" does not exist. in /home/cognbkdo/public_html/vendor/symfony/yaml/Parser.php:53
+Stack trace:
+#0 /home/cognbkdo/public_html/vendor/symfony/yaml/Yaml.php(56): Symfony\Component\Yaml\Parser->parseFile()
+#1 /home/cognbkdo/public_html/index.php(22): Symfony\Component\Yaml\Yaml::parseFile()
+#2 {main}
+  thrown in /home/cognbkdo/public_html/vendor/symfony/yaml/Parser.php on line 53
+[13-Mar-2026 16:30:49 UTC] PHP Fatal error:  Uncaught Symfony\Component\Yaml\Exception\ParseException: File "/home/cognbkdo/public_html/data/banner.yml" does not exist. in /home/cognbkdo/public_html/vendor/symfony/yaml/Parser.php:53
+Stack trace:
+#0 /home/cognbkdo/public_html/vendor/symfony/yaml/Yaml.php(56): Symfony\Component\Yaml\Parser->parseFile()
+#1 /home/cognbkdo/public_html/index.php(22): Symfony\Component\Yaml\Yaml::parseFile()
+#2 {main}
+  thrown in /home/cognbkdo/public_html/vendor/symfony/yaml/Parser.php on line 53

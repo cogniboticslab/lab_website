@@ -1,0 +1,25 @@
+name: Minh Duc Pham
+title: Graduate Student
+department: Computer Science
+email: phamminhduc_t65@hus.edu.vn
+photo: ducpham.png
+linkedin: https://www.linkedin.com/in/pmduck24/
+github: https://github.com/pmduc2404
+schorlar: https://scholar.google.com/citations?hl=vi&view_op=list_works&gmla=AElLoL09FsZK5dxq0K3pEATRWR_PfxQxo6vdtm3QvIULQeqnqmL-CHFfshUMIuUwEulKcCxgQC_1d9DgCkjU-5lsRjQTluy8oYk&user=GGXug98AAAAJre
+
+about: Pham Minh Duc is an AI researcher with a Bachelor’s degree in Computer and Information Science from VNU University of Science. His research interests center on computer vision and deep learning, 
+      with a particular focus on developing and optimizing models for high accuracy and efficiency. He has published and contributed to ongoing research presented at international conferences. 
+      His current work aims to advance computer vision methods for real-world challenges, especially in healthcare and intelligent systems.
+
+educations:
+  - degree:  Bsc.
+    institution: Hanoi University of Science, Vietnam
+    year: 2024
+    field:  Computer and Information Science
+
+
+publications: 
+
+awards: # Array
+  - The First Prize in the Student Scientific Research Competition 2023 - 2024, Hanoi University of Science
+  

@@ -1,0 +1,26 @@
+name: Jay Krisell
+title: Graduate Student
+department: Electrical Engineering and Computer Science
+email: jckrisel@uark.edu
+photo: jay.jpg
+linkedin: 
+github: 
+schorlar: 
+
+about: 
+
+educations:
+  - degree: BSc
+    institution: University of Arkansas, USA
+    year: 2025
+    field: Electrical Engineering and Computer Science
+
+
+publications: #
+
+awards: # Array
+
+# Review services 
+services: 
+  conferences: # Array
+  journals: # Array

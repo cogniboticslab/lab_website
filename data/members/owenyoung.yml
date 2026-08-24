@@ -1,0 +1,29 @@
+name: Owen Young
+title: Undergraduate Student
+department: Electrical Engineering and Computer Science
+email: omyoung@uark.edu
+photo: owen.png
+linkedin: www.linkedin.com/in/owen-young-3311b0239
+github:
+schorlar:
+
+about: I am an undergraduate research assistant at the University of Arkansas pursuing a Bachelor of Science in Electrical Engineering. My current research involves applications of robotics in agriculture. My other interests include energy systems and environmental sustainability.
+
+educations:
+  - degree: BS
+    institution: University of Arkansas, Fayetteville, AR
+    year: 2026
+    field: Electrical Engineering
+  - degree: BA
+    institution: University of Oklahoma, Norman, OK
+    year: 2022
+    field: Global Energy, Environment & Resources
+
+publications: #
+
+awards: # Array
+
+# Review services
+services:
+  conferences: # Array
+  journals: # Array

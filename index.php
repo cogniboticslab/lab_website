@@ -1,83 +1,109 @@
-<!DOCTYPE html>
-<?php 
-    require __DIR__ . '/config.php'; 
-    use Symfony\Component\Yaml\Yaml;
-?>
+<?php
+    require __DIR__ . '/config.php';
 
-<html >
-  <title><?= $config['title']  ?></title>
+    $page_title      = $config['title'] . ' - ' . $config['university'];
+    $slides          = array_values(array_filter(
+                          load_yaml(__DIR__ . '/data/banner.yml'),
+                          fn ($s) => !empty($s['image'])
+                       ));
+    $news            = load_yaml(__DIR__ . '/data/news.yml');
+    $groups_projects = load_yaml(__DIR__ . '/data/projects.yml');
+?>
+<!DOCTYPE html>
+<html lang="en">
   <?php require ROOT_PATH . '/includes/head.php'; ?>
   <body>
-    <main>
     <?php require ROOT_PATH . '/includes/header.php'; ?>
-    
-    <!-- Content -->
-    <!-- <div class="hero-banner ">
-    <div class="hero-overlay">
-        <h3 class ="hero-text" ><?php echo $config['title'] ?> </h3>
-        <p class ="hero-text"><?php echo $config['description']?> </p>
-    </div>
-    </div> -->
 
-    <?php $slides = Yaml::parseFile(__DIR__ . '/data/banner.yml'); ?>
+    <main id="main">
 
-<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
-    <div class="carousel-inner">
-        <?php foreach ($slides as $index => $slide): ?>
-            <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>">
-                <img
-                    src="/assets/images/banner/<?= htmlspecialchars($slide['image']) ?>"
-                    class="d-block w-100 hero-slide"
-                    alt="Banner <?= $index + 1 ?>"
-                >
-                <div class="carousel-caption hero-overlay">
-                    <h3><?= htmlspecialchars($config['title']) ?></h3>
-                    <p><?= htmlspecialchars($config['description']) ?></p>
+    <?php if ($slides): ?>
+    <section class="hero" data-carousel>
+        <div class="hero__viewport">
+            <?php foreach ($slides as $i => $slide): ?>
+            <div class="hero__slide<?= $i === 0 ? ' is-active' : '' ?>">
+                <img src="/assets/images/banner/<?= e($slide['image']) ?>"
+                     alt=""
+                     <?= $i === 0 ? 'fetchpriority="high"' : 'loading="lazy"' ?>>
+            </div>
+            <?php endforeach; ?>
+            <div class="hero__scrim"></div>
+
+            <div class="hero__copy">
+                <div class="shell">
+                    <span class="hero__eyebrow"><?= e($config['university']) ?></span>
+                    <h1 class="hero__title"><?= e($config['title']) ?></h1>
+                    <p class="hero__lede"><?= e($config['description']) ?></p>
                 </div>
             </div>
-        <?php endforeach; ?>
-    </div>
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-    </button>
-</div>
-
-
-
-
-
-    <section class="news">
-        <?php $news = Yaml::parseFile(__DIR__ . '/data/news.yml'); ?>
-        <h4>News & Events</h4>
-        <ul>
-            <?php foreach ($news as $item): ?>
-                <li><strong><?= $item['date'] ?>: </strong>  <?= $item['event'] ?></li>
-            <?php endforeach; ?>
-        </ul>
-    </section>
-
-    <section>
-    <h4>Projects</h4>
-    <?php $groups_projects = Yaml::parseFile(__DIR__ . '/data/projects.yml'); ?>
-    <?php foreach ($groups_projects as $group): ?>
-    <h5><?= $group['name'] ?> </h5>
-    <div class="row">
-        <?php foreach ($group['projects'] as $project): ?>
-        <div class="col-sm12 col-md-4">
-            <image src="/assets/images/projects/<?= $project['image'] ?>" class="image-project"/>
-            <p style="text-align: center;"> <?= $project['name'] ?> </p>
+            <?php if (count($slides) > 1): ?>
+            <div class="hero__dots" role="tablist" aria-label="Choose slide">
+                <?php foreach ($slides as $i => $slide): ?>
+                <button class="hero__dot<?= $i === 0 ? ' is-active' : '' ?>" type="button"
+                        role="tab" aria-selected="<?= $i === 0 ? 'true' : 'false' ?>"
+                        aria-label="Slide <?= $i + 1 ?>"></button>
+                <?php endforeach; ?>
+            </div>
+            <div class="hero__nav">
+                <button class="hero__btn" type="button" data-carousel-prev aria-label="Previous slide">&#8249;</button>
+                <button class="hero__btn" type="button" data-carousel-next aria-label="Next slide">&#8250;</button>
+            </div>
+            <?php endif; ?>
         </div>
-        <?php endforeach; ?>
-    </div>
-    <?php endforeach; ?>
     </section>
-    
-    <?php require ROOT_PATH . '/includes/footer.php'; ?>
+    <?php endif; ?>
+
+    <?php if ($news): ?>
+    <section class="section section--alt">
+        <div class="shell">
+            <div class="section__head">
+                <h2 class="section__title">News &amp; Events</h2>
+            </div>
+            <ul class="news">
+                <?php foreach ($news as $item): ?>
+                <li class="news__item">
+                    <div class="news__date"><?= e($item['date'] ?? '') ?></div>
+                    <div class="news__body"><?= rich($item['event'] ?? '') ?></div>
+                </li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+    </section>
+    <?php endif; ?>
+
+    <?php if ($groups_projects): ?>
+    <section class="section">
+        <div class="shell">
+            <div class="section__head">
+                <h2 class="section__title">Research Projects</h2>
+            </div>
+
+            <?php foreach ($groups_projects as $group): ?>
+                <?php if (empty($group['projects'])) { continue; } ?>
+                <h3 class="group-title"><?= e($group['name'] ?? '') ?></h3>
+                <div class="grid grid--projects">
+                    <?php foreach ($group['projects'] as $project): ?>
+                    <article class="card">
+                        <?php if (!empty($project['image'])): ?>
+                        <div class="card__media">
+                            <img src="/assets/images/projects/<?= e($project['image']) ?>"
+                                 alt="<?= e($project['name'] ?? '') ?>" loading="lazy">
+                        </div>
+                        <?php endif; ?>
+                        <div class="card__body">
+                            <h4 class="card__title"><?= e($project['name'] ?? '') ?></h4>
+                        </div>
+                    </article>
+                    <?php endforeach; ?>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </section>
+    <?php endif; ?>
+
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <?php require ROOT_PATH . '/includes/footer.php'; ?>
   </body>
 </html>

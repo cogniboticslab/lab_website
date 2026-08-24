@@ -1,6 +1,46 @@
+- Authors: Anh DQ Nguyen, Duc Pham, Thao Phuong Pham, Anh M Nguyen, Huan X. Nguyen, Tuan Dang
+  Title: "KOALA: Koopman Operator Learning for WiFi-Based Anticipatory Human Motion Prediction"
+  Publication: Transactions on Machine Learning Research (TMLR) 
+  Volume: 
+  Number: 
+  Pages: 
+  Year: 2026
+  Publisher:
+  Image: tmlr26_koala.png 
+  Paper: "/assets/images/publications/tmlr26_koala.pdf"
+  Code:  https://github.com/cogniboticslab/koala
+  Video: ""
+
+
+- Authors: Thai Luu, Quan Tran, Hieu Phan, Tuan Dang
+  Title: "Geometry-Aware Online Mapping for 3D Gaussian Splatting SLAM"
+  Publication: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+  Volume: 
+  Number: 
+  Pages: 
+  Year: 2026
+  Publisher:
+  Image: iros26_3dgs_slam.png 
+  Paper: "/assets/images/publications/iros26_3dgs_slam.pdf"
+  Code:  https://github.com/cogniboticslab/3dgs_slam
+  Video: "https://youtu.be/5aMLkQafenI"
+
+- Authors: Nam Tran, Thu Tran, Hieu Phan, Thai Luu, Toan Nguyen, William J Beksi, Tuan Dang
+  Title: "HP2-SLAM: Adaptive Hybrid ICP for Robust and Efficient LiDAR SLAM"
+  Publication: Preprint
+  Volume: 
+  Number: 
+  Pages: 
+  Year: 2026
+  Publisher:
+  Image: preprint26_hp2_slam.png 
+  Paper: "/assets/images/publications/preprint26_hp2_slam.pdf"
+  Code:  https://github.com/cogniboticslab/hp2slam
+  Video: "https://www.youtube.com/watch?v=Ix9MedFnE4k"
+
 - Authors: Anh DQ Nguyen, Duc Pham, Anh M Nguyen, Tung Doan, Tuan Dang
   Title: "T2-Nav: Algebraic-Topology–Aware Temporal Graph Memory and Loop Detection for Zero-Shot Visual Navigation"
-  Publication:  IEEE International Conference on Robotics & Automation 2026 (ICRA)
+  Publication:  IEEE International Conference on Robotics & Automation (ICRA)
   Volume: 
   Number: 
   Pages: 
@@ -26,7 +66,7 @@
 
 - Authors: Quan Tran, Tuan Dang
   Title: "TriaGS: Differentiable Triangulation-Guided Geometric Consistency for 3D Gaussian Splatting"
-  Publication:  The IEEE/CVF Winter Conference on Applications of Computer Vision 2026 (WACV)
+  Publication:  The IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)
   Volume: 
   Number: 
   Pages: 

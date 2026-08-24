@@ -36,12 +36,6 @@
       phone: 
       email: omyoung@uark.edu
 
-    - name: Nguyen Nguyen
-      id: nguyennguyen
-      image: nguyennguyen.png
-      title: Upcoming Graduate Student
-      email: hnguyen1@uark.edu
-
 - group:
   name: Research Intern
   people:
@@ -51,6 +45,7 @@
       image: anhnguyen.png
       title: Undergraduate Student
       email: anhnd@vnuis.edu.vn
+      # next: Researcher @ Middlesex University, UK
 
     - name: Duc Pham
       id: ducpham
@@ -61,7 +56,7 @@
     - name: Tung Doan
       id: tungdoan
       image: tungdoan.png
-      title: Graduate Student
+      title: Undergraduate Student
       email: tung.dd224906@sis.hust.edu.vn
 
 

@@ -1,23 +1,26 @@
-<div class="sticky-header">
-  <header class="main-banner">
-    <!-- <div  class="main-banner"> -->
-      <div class="main-overlay">
-      <a href="/">
-        <h1 style=" font-size: 2.1em; font-weight: bold; color: white;">Cognitive Robotics Lab</h1>
-        <p style=" font-size: 1.0em; font-weight: bold; color: white;">University of Arkansas</p>
-      </a>
-      </div>
-    <!-- </div> -->
-  </header>
+<a class="skip-link" href="#main">Skip to content</a>
 
-  <nav>
-    <button class="hamburger" onclick="toggleMenu()">☰</button>
-    <div class="menu " id="menu">
-      <a href="/" class="active">Home</a>
+<div class="masthead">
+  <div class="shell masthead__inner">
+    <a class="brand" href="/">
+      <span class="brand__mark" aria-hidden="true">CRL</span>
+      <span>
+        <span class="brand__name"><?= e($config['title']) ?></span>
+        <span class="brand__sub"><?= e($config['university']) ?></span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation"
+            aria-expanded="false" aria-controls="site-nav">
+      <span></span>
+    </button>
+
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="/">Home</a>
       <a href="/team.php">Team</a>
       <a href="/publications.php">Publications</a>
-      <a href="/joinus.php ">Join Us</a>
+      <a href="/joinus.php">Join Us</a>
       <a href="/contact.php">Contact</a>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </div>
