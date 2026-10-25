@@ -35,61 +35,6 @@
     }
     $committees = array_filter((array) $committees);
 
-    // Project showcase. Tolerant of a few YAML shapes:
-    //   project: {title: ..., links: [{label:, url:, note:}, ...]}
-    //   project: [{label:, url:}, ...]
-    //   project: {short: <url>, long: <url>}
-    $showcase       = $member['project'] ?? ($member['projects'] ?? ($member['showcase'] ?? []));
-    $showcase_title = 'Project Showcase';
-    $showcase_links = [];
-
-    if (is_array($showcase)) {
-        if (!empty($showcase['title'])) {
-            $showcase_title = (string) $showcase['title'];
-        }
-        $raw_links = $showcase['links'] ?? $showcase['items'] ?? $showcase;
-
-        // Friendly names for bare keys like "short:" / "long:".
-        $known = [
-            'short' => 'Short Videos',
-            'long'  => 'Full Videos',
-            'video' => 'Videos',
-            'demo'  => 'Demos',
-            'code'  => 'Code',
-            'site'  => 'Website',
-        ];
-
-        foreach ((array) $raw_links as $key => $entry) {
-            if (in_array($key, ['title', 'links', 'items'], true)) {
-                continue;
-            }
-            if (is_array($entry)) {
-                // Either {label:, url:} or a single-key map such as {short: url}.
-                if (!empty($entry['url'])) {
-                    $label = $entry['label'] ?? $entry['name'] ?? 'Link';
-                    $note  = $entry['note']  ?? $entry['description'] ?? '';
-                    $url   = $entry['url'];
-                } else {
-                    $inner = array_filter($entry, 'is_string');
-                    if (!$inner) { continue; }
-                    $label = (string) array_key_first($inner);
-                    $url   = reset($inner);
-                    $note  = '';
-                    $label = $known[strtolower($label)] ?? ucfirst($label);
-                }
-            } else {
-                // Scalar: the YAML key is the label.
-                $url   = (string) $entry;
-                $label = is_string($key) ? ($known[strtolower($key)] ?? ucfirst($key)) : 'Link';
-                $note  = '';
-            }
-
-            $url = link_url($url);
-            if ($url === '') { continue; }
-            $showcase_links[] = ['label' => $label, 'url' => $url, 'note' => $note];
-        }
-    }
-
     // "schorlar" is the spelling used in most member files; "scholar" in a few.
     $profile_links = [];
     foreach ([
@@ -173,24 +118,6 @@
                     <div class="profile__section">
                         <h3>About</h3>
                         <div class="prose"><p><?= rich($member['about']) ?></p></div>
-                    </div>
-                    <?php endif; ?>
-
-                    <?php if ($showcase_links): ?>
-                    <div class="profile__section">
-                        <h3><?= e($showcase_title) ?></h3>
-                        <div class="showcase">
-                            <?php foreach ($showcase_links as $link): ?>
-                            <a class="showcase__item" href="<?= e($link['url']) ?>"
-                               target="_blank" rel="noopener">
-                                <span class="showcase__label"><?= e($link['label']) ?></span>
-                                <?php if ($link['note'] !== ''): ?>
-                                    <span class="showcase__note"><?= e($link['note']) ?></span>
-                                <?php endif; ?>
-                                <span class="showcase__host"><?= e(parse_url($link['url'], PHP_URL_HOST) ?? '') ?></span>
-                            </a>
-                            <?php endforeach; ?>
-                        </div>
                     </div>
                     <?php endif; ?>
 

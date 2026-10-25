@@ -1,4 +1,19 @@
 - group:
+  name: 3D/4D SLAM
+  projects:
+  - project:
+    name: 3D-SLAM for agriculture applications
+    youtube_id: GQmowpbormY
+
+  - project:
+    name: 4D-SLAM with Gaussian Splatting
+    youtube_id: 3OSqmmFTDrI
+
+  - project:
+    name: 3D-SLAM Map with drone
+    youtube_id: OcfH61r2qis
+
+- group:
   name: Rosie Baxter-customized robot
   projects:
   - project:
@@ -12,21 +27,6 @@
   - project:
     name: Human-like Topological Map
     image: rosie_map.jpg
-
-- group:
-  name: Robot Teaching Hardware/Software
-  projects:
-  - project:
-    name: Teaching Pendant 7 inches (ARM-based, Linux)
-    image: tp7hw2.jpg
-
-  - project:
-    name: Teaching Pendant 5 inches (STM32, bare-metal)
-    image: tp3.jpg
-
-  - project:
-    name: Oscilloscope
-    image: sim_osc.jpg
 
 - group:
   name: Embedded Systems

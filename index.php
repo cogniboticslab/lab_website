@@ -85,14 +85,27 @@
                 <div class="grid grid--projects">
                     <?php foreach ($group['projects'] as $project): ?>
                     <article class="card">
-                        <?php if (!empty($project['image'])): ?>
+                        <?php if (!empty($project['youtube_id'])): ?>
+                        <div class="card__media card__media--video">
+                            <iframe src="https://www.youtube-nocookie.com/embed/<?= e($project['youtube_id']) ?>"
+                                    title="<?= e($project['name'] ?? '') ?>" loading="lazy"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                        </div>
+                        <?php elseif (!empty($project['image'])): ?>
                         <div class="card__media">
                             <img src="/assets/images/projects/<?= e($project['image']) ?>"
                                  alt="<?= e($project['name'] ?? '') ?>" loading="lazy">
                         </div>
                         <?php endif; ?>
                         <div class="card__body">
-                            <h4 class="card__title"><?= e($project['name'] ?? '') ?></h4>
+                            <h4 class="card__title">
+                                <?php if (!empty($project['youtube_id'])): ?>
+                                <a href="https://www.youtube.com/watch?v=<?= e($project['youtube_id']) ?>"><?= e($project['name'] ?? '') ?></a>
+                                <?php else: ?>
+                                <?= e($project['name'] ?? '') ?>
+                                <?php endif; ?>
+                            </h4>
                         </div>
                     </article>
                     <?php endforeach; ?>
